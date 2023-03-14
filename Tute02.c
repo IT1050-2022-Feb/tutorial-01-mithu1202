@@ -21,19 +21,19 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 int main() {
 
   int km;
-  float total, tot;
+  float total = 0;
 
   printf("Enter the total km :");
   scanf("%d", &km);
 
-  if (km <= 30) {
-    tot = km * 50;
-  }
-  if (km > 30)
-    ;
-  { total = 30 * 50 + (km - 30) * 40; }
+  if (0 < km && km <= 30) {
+    total = km * 50;
+  } else if (km > 30) {
 
-  printf("Total charges is :", total);
+    total = (30 * 50) + (km - 30) * 40;
+  }
+
+  printf("Total charges is : %.2f", total);
 
   return 0;
 }

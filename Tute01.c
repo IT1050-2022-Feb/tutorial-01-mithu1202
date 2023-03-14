@@ -11,11 +11,11 @@ int main() {
   float avg;
 
   printf("Enter the marks : ");
-  scanf("%d,%d", &m1, &m2);
+  scanf("%d%d", &m1, &m2);
 
-  avg = m1 + m2 / 2.0;
+  avg = (m1 + m2) / 2.0;
 
-  printf("Average is : ", avg);
+  printf("Average is : %.2f", avg);
 
   return 0;
 }
